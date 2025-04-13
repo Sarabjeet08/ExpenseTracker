@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f5dc, #d4a373); /* Warm, calm background */
+    color: #333; /* High contrast text */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+::selection {
+    background-color: #a67c52; /* Warm selection color */
+    color: white;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background: linear-gradient(90deg, #d4a373 0%, #a67c52 100%) !important; /* Warm navbar */
+    border-bottom: 2px solid #8c5a3c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff !important;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff !important;
+}
+
+.navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff !important;
+}
+
+.navbar .btn-primary {
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* FORM CONTAINER */
+.container .form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+}
+
+.form-control {
+    height: 44px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.form .button {
+    background: linear-gradient(to right, #a67c52, #8c5a3c); /* Warm button gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form .button:hover {
+    background: linear-gradient(to right, #8c5a3c, #6b4226); /* Slightly darker hover */
+    transform: scale(1.03);
+}
+
+/* ALERT */
+.alert {
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+/* CARD */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    background-color: #d4a373; /* Warm card header */
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+    background-color: #f5f5dc; /* Calm card body */
+    padding: 20px;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: linear-gradient(to right, #a67c52, #8c5a3c); /* Warm button gradient */
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #8c5a3c, #6b4226); /* Slightly darker hover */
+    transform: scale(1.05);
+}
+
+.btn-warning {
+    background-color: #ffcc00; /* Bright yellow for edit */
+    color: #333;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800; /* Slightly darker hover */
+}
+
+.btn-danger {
+    background-color: #df4b4b; /* Bright red for delete */
+    color: white;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b; /* Slightly darker hover */
+}
+
+/* TABLE */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.table thead {
+    background-color: #d4a373; /* Warm header background */
+    color: white; /* High contrast text */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5dc; /* Calm hover effect */
+}
+
+/* INCOME RECORDS */
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light background for odd rows */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White background for even rows */
+}
+
+.table tbody td {
+    color: #333; /* High contrast text */
+    font-weight: 500;
+}
+
+/* INPUT FIELDS */
+input.form-control {
+    border: 1px solid #d4a373; /* Consistent border color */
+    border-radius: 6px;
+    padding: 8px;
+}
+
+/* MODALS */
+.modal-header {
+    background: linear-gradient(90deg, #d4a373, #a67c52); /* Warm modal header */
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.modal-footer {
+    background-color: #f5f5dc; /* Calm modal footer */
+    border-top: none;
+}
+
+/* CANVAS / CHARTS */
+canvas {
+    background-color: #f5f5dc; /* Calm chart background */
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+canvas:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* CHART CONTAINER */
+.chart-container {
+    background-color: #ffffff; /* White background for chart container */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* IMAGE ROUND */
+img.rounded-circle {
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 50% !important;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(90deg, #d4a373, #a67c52); /* Warm footer */
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+    margin-top: 60px;
+    border-top: 2px solid #8c5a3c;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
